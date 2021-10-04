@@ -1794,19 +1794,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\magno.moreira\\.nuget\\packages\\": {}
+    "C:\\Users\\magno\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\magno.moreira\\source\\repos\\FilmesApi\\FilmesApi\\FilmesApi.csproj",
+      "projectUniqueName": "C:\\Users\\magno\\OneDrive\\Área de Trabalho\\alura\\AluraApi\\FilmesApi\\FilmesApi.csproj",
       "projectName": "FilmesApi",
-      "projectPath": "C:\\Users\\magno.moreira\\source\\repos\\FilmesApi\\FilmesApi\\FilmesApi.csproj",
-      "packagesPath": "C:\\Users\\magno.moreira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\magno.moreira\\source\\repos\\FilmesApi\\FilmesApi\\obj\\",
+      "projectPath": "C:\\Users\\magno\\OneDrive\\Área de Trabalho\\alura\\AluraApi\\FilmesApi\\FilmesApi.csproj",
+      "packagesPath": "C:\\Users\\magno\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\magno\\OneDrive\\Área de Trabalho\\alura\\AluraApi\\FilmesApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\magno.moreira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\magno\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1869,7 +1869,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

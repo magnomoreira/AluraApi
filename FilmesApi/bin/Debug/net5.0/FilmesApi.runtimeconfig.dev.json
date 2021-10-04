@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\magno.moreira\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\magno.moreira\\.nuget\\packages"
+      "C:\\Users\\magno\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\magno\\.nuget\\packages"
     ]
   }
 }

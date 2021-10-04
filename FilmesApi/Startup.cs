@@ -9,7 +9,7 @@ using Microsoft.OpenApi.Models;
 
 namespace FilmesApi
 {
-    public class Startup
+	public class Startup
     {
         public Startup(IConfiguration configuration)
         {

@@ -17,5 +17,6 @@ namespace FilmesApi.Models
 
         [Range(1, 600)]
         public int Duracao { get; set; }
+
     }
 }
