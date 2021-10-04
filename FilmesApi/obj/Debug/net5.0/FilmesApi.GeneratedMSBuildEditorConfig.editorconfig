@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = FilmesApi
-build_property.ProjectDir = C:\Users\magno\OneDrive\Área de Trabalho\alura\AluraApi\FilmesApi\
+build_property.ProjectDir = C:\Users\magno.moreira\Desktop\dev\alura\cursoapirest\AluraApi\FilmesApi\

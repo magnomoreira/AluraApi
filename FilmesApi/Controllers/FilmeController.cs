@@ -1,4 +1,5 @@
-﻿using FilmesApi.Data;
+﻿using AutoMapper;
+using FilmesApi.Data;
 using FilmesApi.Data.Dtos;
 using FilmesApi.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -13,24 +14,19 @@ namespace FilmesApi.Controllers
     public class FilmeController : ControllerBase
     {
         private FilmeContext _context;
+        private IMapper _maper;
 
-		public FilmeController(FilmeContext context)
+		public FilmeController(FilmeContext context, IMapper mapper)
 		{
 
 			_context = context;
+            _maper = mapper;
 		}
 
 		[HttpPost]
         public IActionResult Adicionar([FromBody] CreateFilmeDto filmeDto)
         {
-            var filme = new Filme
-            {
-                Titulo = filmeDto.Titulo,
-                Direto = filmeDto.Direto,
-                Genero = filmeDto.Genero,
-                Duracao = filmeDto.Duracao,
-
-            };
+            var filme = _maper.Map<Filme>(filmeDto);
 
             _context.Filmes.Add(filme);
             _context.SaveChanges();
@@ -52,15 +48,7 @@ namespace FilmesApi.Controllers
 
             if (result != null)
 			{
-                var readFilme = new ReadFilmeDto
-                {
-                    Titulo = result.Titulo,
-                    Duracao = result.Duracao,
-                    Genero = result.Genero,
-                    Direto = result.Direto
-                    
-                };
-
+                var readFilme = _maper.Map<ReadFilmeDto>(result);
                 return Ok(readFilme);
 			}
             return NoContent();
@@ -71,10 +59,7 @@ namespace FilmesApi.Controllers
 		{
             var result = _context.Filmes.FirstOrDefault(filme => filme.Id == id);
             if (result == null) return NotFound();
-            result.Titulo = filmeDto.Titulo;
-            result.Genero = filmeDto.Genero;
-            result.Duracao =filmeDto.Duracao;
-            result.Direto = filmeDto.Direto;
+            _maper.Map(filmeDto, result);
             _context.SaveChanges();
             return NoContent();
 		}
